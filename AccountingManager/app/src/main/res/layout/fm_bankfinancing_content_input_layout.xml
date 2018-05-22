@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/bank_financing_input_number"
+        style="@style/UiContentStyle_input"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        app:uiContentGravity="right"
+        app:uiContentHint="0"
+        app:uiContentTitleText="@string/bank_financing_input_msg_1" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/bank_financing_input_rate"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/bank_financing_input_msg_2" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/bank_financing_input_startTime"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentGravity="right"
+        app:uiContentText="2017-5-15"
+        app:uiContentTitleText="@string/bank_financing_input_msg_3" />
+
+    <View style="@style/LineViewStyle" />
+
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/bank_financing_input_time"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentInputType="amount"
+        app:uiContentTitleText="@string/bank_financing_input_msg_4" />
+
+    <TextView
+        style="@style/TextMsgStyle"
+        android:gravity="left"
+        android:text="@string/bank_financing_input_msg_7" />
+
+    <Button
+        android:id="@+id/bank_financing_input_submit"
+        style="@style/buttonStyle"
+        android:text="@string/submit" />
+
+</LinearLayout>

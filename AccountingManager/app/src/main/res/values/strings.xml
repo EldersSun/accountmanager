@@ -1,0 +1,500 @@
+<resources>
+    <string name="app_name">AccountingManager</string>
+    <string name="main_menu_text_1">余额</string>
+    <string name="main_menu_text_2">资产透视</string>
+    <string name="main_menu_text_3">工具</string>
+    <!-- 系统常用 -->
+    <string name="newwork_timeout">网络连接超时!</string>
+    <string name="netWorkErr_1">请程序权限，无法获取imei</string>
+    <string name="netWorkErr">请检查网络设置</string>
+    <string name="loadMessage">数据加载中，请稍后...</string>
+    <string name="dialog_wait">请稍后...</string>
+    <string name="accouting_home_title_text">总资产（元）</string>
+    <string name="account_msg_1">经典视图</string>
+    <string name="account_msg_2">分类视图</string>
+    <string name="account_msg_3">到期视图</string>
+    <string name="account_msg_4">昨天收益(元):</string>
+    <string name="search">搜索</string>
+    <string name="live">生活资产</string>
+    <string name="property">理财资产</string>
+    <string name="other">其他</string>
+    <string name="selector_property">选择资产</string>
+    <string name="cash">现金</string>
+    <string name="main_menu_text_4">资讯</string>
+    <string name="addInputContentText_1">当前总金额</string>
+    <string name="addInputContentText_2">币种</string>
+    <string name="addInputContentText_3">人民币</string>
+    <string name="addInputContentText_4">输入当前所持有现金的总额，点击"确定"即可添加。</string>
+    <string name="ok">确定</string>
+    <string name="AddInputContent_MSG_1">请输入金额</string>
+    <string name="selector_bank_list_msg_1">添加后可以汇总管理银行卡余额</string>
+    <string name="selector_bank_list_msg_2">理财工具会陆续支持更多银行的自动余额同步，请保持关注</string>
+    <string name="selector_bank_list_msg_3">支持自动同步余额</string>
+    <string name="Selector_Bank">选择银行</string>
+    <string name="selector_money_type">请选择货币种类</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="open">展开</string>
+    <string name="close">关闭</string>
+    <string name="element">元</string>
+    <string name="gu">股</string>
+    <string name="share">份</string>
+    <string name="rate_icon">%</string>
+    <string name="submit">提交</string>
+    <string name="aliPay">支付宝</string>
+    <string name="weChat">微信</string>
+    <string name="more">更多</string>
+    <string name="moreAccount">更多账户</string>
+    <string name="selectorAccount">选择账户</string>
+    <string name="accountBalance">账户余额</string>
+    <string name="accountName">账户名称</string>
+    <string name="AddAssetsMsg_1">需要定期手动更新余额</string>
+    <string name="fund_inpt_message_1">账户总额</string>
+    <string name="fund_inpt_message_2">请输入金额</string>
+    <string name="city">城市</string>
+    <string name="FundInputMsg_1">请输入城市名称</string>
+    <string name="fund">公积金</string>
+    <string name="lia_selector_msg_1">欠款</string>
+    <string name="lia_selector_msg_2">我有欠款</string>
+    <string name="lia_selector_msg_3">花呗、借呗、白条</string>
+    <string name="lia_selector_msg_4">消费贷款</string>
+    <string name="lia_selector_msg_5">房贷</string>
+    <string name="lia_selector_msg_6">车贷</string>
+    <string name="arrears_input_msg_1">简单</string>
+    <string name="arrears_input_msg_2">高级</string>
+    <string name="Simple_msg_1">债主</string>
+    <string name="Simple_msg_2">总金额</string>
+    <string name="Simple_msg_3">利率</string>
+    <string name="Simple_msg_4">期限</string>
+    <string name="Simple_msg_5">起息时间</string>
+    <string name="Simple_msg_6">还款方式</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">天</string>
+    <string name="individual">个</string>
+    <string name="Simple_msg_7">到期还本付息</string>
+    <string name="Simple_msg_8">个人或平台</string>
+    <string name="simple_msg_1">请输入债主！</string>
+    <string name="simple_msg_2">请输入金额</string>
+    <string name="simple_msg_3">请输入利率</string>
+    <string name="simple_msg_4">请输入期限</string>
+    <string name="SelectorType">选择类型</string>
+    <string name="mortgage_msg_1">商业贷款</string>
+    <string name="mortgage_msg_2">公积金贷款</string>
+    <string name="mortgage_msg_3">组合贷款</string>
+    <string name="Business_msg_1">房产名称</string>
+    <string name="Business_msg_2">贷款本金</string>
+    <string name="Business_msg_3">年利率</string>
+    <string name="Business_msg_4">每月还款日</string>
+    <string name="Business_msg_5">15号</string>
+    <string name="Business_msg_6">选填</string>
+    <string name="business_day">日</string>
+    <string name="stage">期</string>
+    <string name="Business_msg_7">20年/240期</string>
+    <string name="Combination_msg_1">商业贷款本金</string>
+    <string name="Combination_msg_2">商业贷款年利率</string>
+    <string name="Combination_msg_3">公积金贷款本金</string>
+    <string name="Combination_msg_4">期限</string>
+    <string name="Combination_msg_5">起息时间</string>
+    <string name="Combination_msg_6">还款方式</string>
+    <string name="Combination_msg_7">每月还款日</string>
+    <string name="Combination_msg_8">15日</string>
+    <string name="Combination_msg_9">等额本息</string>
+    <string name="Combination_msg_10">公积金贷款年利率</string>
+    <string name="combination_msg_11">请输入商业贷款金额</string>
+    <string name="combination_msg_12">请输入商业贷款年利率</string>
+    <string name="combination_msg_13">请输入公积金贷款金额</string>
+    <string name="combination_msg_14">请输入公积金贷款年利率</string>
+    <string name="lend_msg_1">借出金额</string>
+    <string name="lend_msg_2">借款人</string>
+    <string name="lend_msg_3">请输入借出金额</string>
+    <string name="lend_msg_4">请输入借款人姓名</string>
+    <string name="fixed_msg_1">请输入名称</string>
+    <string name="fixed_msg_3">名称</string>
+    <string name="fixed_msg_4">资产金额</string>
+    <string name="fixed_msg_2">请输入金额</string>
+    <string name="fixed_msg_5">请输入名称</string>
+    <string name="NetLoan_msg_1">定期</string>
+    <string name="NetLoan_msg_2">活期</string>
+    <string name="NetLoan_msg_3">余额</string>
+    <string name="regular_msg_1">选填</string>
+    <string name="regular_msg_2">项目名称</string>
+    <string name="regular_msg_3">实际投资金额（不含抵扣）</string>
+    <string name="regular_msg_4">投资金额</string>
+    <string name="regular_msg_5">年化收益率</string>
+    <string name="regular_msg_6">投资期限</string>
+    <string name="regular_msg_7">起息时间</string>
+    <string name="regular_msg_8">到期还本付息</string>
+    <string name="regular_msg_9">回款方式</string>
+    <string name="regular_msg_10">输入该笔资产的相关信息，即可开始追踪该笔资产</string>
+    <string name="rate">利率</string>
+    <string name="term">期限</string>
+    <string name="startTime">起息时间</string>
+    <string name="repaymentMode">还款方式</string>
+    <string name="netLoan_current_msg_1">当前金额</string>
+    <string name="netLoan_current_msg_2">年化收益率</string>
+    <string name="NetLoan_Balance_msg_1">账户余额</string>
+    <string name="monetary_fund_inpt_msg_1">添加所持有的该货币基金当前总额后，本工具会自动跟踪该笔资产的市场净值变化，但发生新的购买和赎时，需要您及时修改</string>
+    <string name="fund_details_simple_msg_1">当前持有份数</string>
+    <string name="fund_details_simple_msg_2">选填项</string>
+    <string name="fund_details_simple_msg_3">选填</string>
+    <string name="fund_details_simple_msg_4">持仓总成本</string>
+    <string name="fund_details_simple_msg_5">累计收益</string>
+    <string name="fund_details_simple_msg_6">一分钟婉转基金记账</string>
+    <string name="fund_details_senior_msg_1">申购金额</string>
+    <string name="fund_details_senior_msg_2">请选择</string>
+    <string name="fund_details_senior_msg_3">申购确认日</string>
+    <string name="fund_details_senior_msg_4">申购费率</string>
+    <string name="fund_details_senior_msg_5">记定投</string>
+    <string name="fund_details_simple_msg_7">请填写持有份数</string>
+    <string name="fund_details_simple_msg_8">持仓总成本</string>
+    <string name="fund_details_simple_msg_9">累计收益</string>
+    <string name="fund_details_senior_msg_6">请输入申购金额</string>
+    <string name="fund_details_senior_msg_7">请输入申购确认日期</string>
+    <string name="fund_details_senior_msg_8">请输入申购费率</string>
+    <string name="fund_details_senior_msg_9">申购确认日期</string>
+    <string name="fund_details_senior_msg_10">申购费率</string>
+    <string name="fund_content_msg_1">基金名或代码</string>
+    <string name="fund_content_msg_2">添加后会自动跟踪市场净值变化，计算待仓收益</string>
+    <string name="fund_content_msg_3">热门基金</string>
+    <string name="Shares_content_msg_1">股票名或代码</string>
+    <string name="Shares_content_msg_2">添加后会自动跟踪市场净值变化，计算待仓收益</string>
+    <string name="Shares_content_msg_3">热门股票</string>
+    <string name="Shares_input_content_msg_1">当前持有股数</string>
+    <string name="Shares_input_content_msg_2">买入单价</string>
+    <string name="Shares_input_content_msg_3">多笔交易时可填大致的平均买入价</string>
+    <string name="Shares_input_content_msg_4">请输入当前持有股数</string>
+    <string name="Shares_input_content_msg_5">请输入买入单价</string>
+    <string name="Shares_input_content_msg_6">买入单价</string>
+    <string name="Shares_input_content_msg_7">持有总股数</string>
+    <string name="fixed_deposit_input_msg_1">存期</string>
+    <string name="fixed_deposit_input_msg_2">存入时间</string>
+    <string name="fixed_deposit_input_msg_3">工商银行</string>
+    <string name="fixed_deposit_input_msg_4">存入银行</string>
+    <string name="fixed_deposit_input_msg_5">利率</string>
+    <string name="fixed_deposit_input_msg_6">存入金额</string>
+    <string name="fixed_deposit_input_msg_7">请输入金额</string>
+    <string name="fixed_deposit_input_msg_8">请输入利率</string>
+    <string name="fixed_deposit_input_msg_9">请输入存入时间</string>
+    <string name="fixed_deposit_input_msg_10">请输入存入银行</string>
+    <string name="fixed_deposit_input_msg_11">存入时间</string>
+    <string name="fixed_deposit_input_msg_12">利率</string>
+    <string name="fixed_deposit_input_msg_13">存入银行</string>
+    <string name="fixed_deposit_input_msg_14">6个月</string>
+    <string name="fixed_deposit_input_msg_15">1年</string>
+    <string name="fixed_deposit_input_msg_16">2年</string>
+    <string name="fixed_deposit_input_msg_17">3年</string>
+    <string name="fixed_deposit_input_msg_18">5年</string>
+    <string name="fixed_deposit_input_msg_19">3个月</string>
+    <string name="monetaryfund_msg_1">添加后可以获得到期提醒，平台只能监控预警</string>
+    <string name="bankfinancing_home_msg_1">添加后可以跟踪收益，获得到期提醒</string>
+    <string name="addassets_msg_1">手动添加</string>
+    <string name="addassets_msg_2">同步市场行情，需要手动更新数量</string>
+    <string name="addassets_msg_3">自动同步</string>
+    <string name="addassets_msg_4">安全授权登录，自动快捷查询</string>
+    <string name="bank_input_msg_1">卡内余额</string>
+    <string name="bank_input_msg_2">卡号末四位选填</string>
+    <string name="bank_input_msg_3">银行卡号</string>
+    <string name="netLoanHomeSelector_msg_1">添加后可以获得到期提醒，平台只能监控预警</string>
+    <string name="bank_financing_input_msg_1">投资金额</string>
+    <string name="bank_financing_input_msg_2">年化收益率</string>
+    <string name="bank_financing_input_msg_3">起息时间</string>
+    <string name="bank_financing_input_msg_4">投资期限</string>
+    <string name="bank_financing_input_msg_5">请选择起息时间</string>
+    <string name="bank_financing_input_msg_6">请输入投资期限</string>
+    <string name="national_msg_1">添加后可以跟踪收益、获得到期提醒</string>
+    <string name="national_msg_2">国债类型</string>
+    <string name="national_msg_3">收益率</string>
+    <string name="bank_financing_input_msg_7">添加理财产品投资金额后，即可跟踪该笔资产到期时间及收益</string>
+    <string name="national_msg_4">投资金额</string>
+    <string name="national_msg_5">添加所持有的该货币基金当前总额后，会自动跟踪该笔资产的市场净值变化，但发生新的购买和赎回时，需要您及时修改</string>
+    <string name="national_msg_6">请输入国债金额</string>
+    <string name="insurance_financing_msg_1">名称</string>
+    <string name="insurance_financing_msg_2">投资金额</string>
+    <string name="insurance_financing_msg_3">年化收益率</string>
+    <string name="insurance_financing_msg_4">投资期限</string>
+    <string name="insurance_financing_msg_5">起息时间</string>
+    <string name="insurance_financing_msg_6">回款方式</string>
+    <string name="insurance_financing_msg_7">请输入产品名称</string>
+    <string name="insurance_financing_msg_8">请输入金额</string>
+    <string name="insurance_financing_msg_9">请输入年化收益率</string>
+    <string name="insurance_financing_msg_10">请输入投资期限</string>
+    <string name="insurance_financing_msg_11">请选择回款方式</string>
+    <string name="insurance_financing_msg_12">年化收益率</string>
+    <string name="insurance_financing_msg_13">投资期限</string>
+    <string name="insurance_financing_msg_14">起息时间</string>
+    <string name="insurance_financing_msg_15">回款方式</string>
+    <string name="insurance_financing_msg_16">请输入投资期限</string>
+    <string name="insurance_financing_msg_17">请输入名称</string>
+    <string name="insurance_financing_msg_18">请输入投资金额</string>
+    <string name="insurance_financing_msg_19">输入该笔资产的相关信息，即可开始追踪该笔资产</string>
+    <string name="foreign_msg_1">当前金额</string>
+    <string name="foreign_msg_2">输入当前所有持的外汇总金额，点击确定即可添加。</string>
+    <string name="foreign_msg_3">请输入当前金额</string>
+    <string name="foreign_msg_4">输入当前所持有的</string>
+    <string name="foreign_msg_5">的总金额，点击“确定”即可添加。</string>
+    <string name="digital_home_msg_1">比特币</string>
+    <string name="digital_home_msg_2">莱特币</string>
+    <string name="digital_input_msg_1">当前持有个数</string>
+    <string name="digital_input_msg_2">输入当前持有的数字货币的总金额，点击“确定”即可添加</string>
+    <string name="digital_input_msg_3">请输入持有的</string>
+    <string name="digital_input_msg_4">的总金额</string>
+    <string name="addAssets_other_simple_msg_1">请输入名称</string>
+    <string name="addAssets_other_simple_msg_2">名称</string>
+    <string name="addAssets_other_simple_msg_3">资产金额</string>
+    <string name="addAssets_other_simple_msg_4">选填</string>
+    <string name="addAssets_other_simple_msg_5">利率</string>
+    <string name="addAssets_other_simple_msg_6">备注</string>
+    <string name="addAssets_other_simple_msg_7">选填</string>
+    <string name="addAssets_other_simple_msg_8">请输入名称</string>
+    <string name="addAssets_other_simple_msg_9">请输入金额</string>
+    <string name="addAssets_other_simple_msg_10">利率</string>
+    <string name="addAssets_other_simple_msg_11">备注</string>
+    <string name="addAssets_other_senior_msg_1">请输入名称</string>
+    <string name="addAssets_other_senior_msg_2">名称</string>
+    <string name="addAssets_other_senior_msg_3">资产总额</string>
+    <string name="addAssets_other_senior_msg_4">年化收益率</string>
+    <string name="addAssets_other_senior_msg_5">投资期限</string>
+    <string name="addAssets_other_senior_msg_6">起始时间</string>
+    <string name="addAssets_other_senior_msg_7">回款方式</string>
+    <string name="addAssets_other_senior_msg_8">请输入名称</string>
+    <string name="addAssets_other_senior_msg_9">请输入金额</string>
+    <string name="addAssets_other_senior_msg_10">请输入年化收益率</string>
+    <string name="addAssets_other_senior_msg_11">请输入投资期限</string>
+    <string name="addAssets_other_senior_msg_12">请选择起始时间</string>
+    <string name="addAssets_other_senior_msg_13">请选择回款方式</string>
+    <string name="addAssets_other_senior_msg_14">年化收益率</string>
+    <string name="addAssets_other_senior_msg_15">投资期限</string>
+    <string name="addAssets_other_senior_msg_16">起始时间</string>
+    <string name="addAssets_other_senior_msg_17">回款方式</string>
+    <string name="addAssets_other_senior_msg_18">请输入投资期限</string>
+    <string name="Assets_Home_msg_1">综合分析</string>
+    <string name="Assets_Home_msg_2">理财历程</string>
+    <string name="assets_analysis_msg_1">资产</string>
+    <string name="assets_analysis_msg_2">负债</string>
+    <string name="assets_analysis_msg_3">分享我的配置</string>
+    <string name="assets_analysis_msg_4">发现好配置</string>
+    <string name="assets_analysis_msg_5">收益</string>
+    <string name="assets_analysis_msg_6">流动性</string>
+    <string name="assets_analysis_msg_7">风险</string>
+    <string name="assets_analysis_msg_8">已归档资产</string>
+    <string name="account_home_msg_1">安全盾</string>
+    <string name="account_home_msg_2">手势密码与指纹密码</string>
+    <string name="account_home_msg_3">余额同步账号管理</string>
+    <string name="account_home_msg_4">消息推送提醒</string>
+    <string name="account_home_msg_5">给个好评</string>
+    <string name="account_home_msg_6">帮助与反馈</string>
+    <string name="account_home_msg_7">更多</string>
+    <string name="account_home_msg_8">未登陆</string>
+    <string name="login">登录</string>
+    <string name="login_msg_1">请输入手机号码</string>
+    <string name="login_msg_2">下一步</string>
+    <string name="login_msg_3">已阅读并同意《用户协议》及《隐私声明》未注册过的手机号将会自动创建为新账户</string>
+    <string name="login_msg_4">请输入手机号码</string>
+    <string name="login_msg_5">请勾选用户协议及隐私声明</string>
+    <string name="user_login_msg_1">请输入登录密码</string>
+    <string name="user_login_msg_2">忘记密码？</string>
+    <string name="user_login_msg_3">欢迎回来</string>
+    <string name="user_login_msg_4">切换账号</string>
+    <string name="user_register_msg_1">请输入短信验证码</string>
+    <string name="user_register_msg_2">重发</string>
+    <string name="user_register_msg_3">请设置登录密码</string>
+    <string name="user_register_msg_4">立即注册</string>
+    <string name="user_register_msg_5">用户注册</string>
+    <string name="user_register_msg_6">重发（</string>
+    <string name="user_register_msg_7">)</string>
+    <string name="user_register_msg_8">重新获取</string>
+
+    <!-- ***************************** 还款方式 ***************************** -->
+
+    <array name="SeniorSelectorType">
+        <item>到期还本付息</item>
+        <item>等额本金</item>
+        <item>等额本息</item>
+        <item>每月付息，到期还本</item>
+    </array>
+
+    <array name="BusinessSelectorType">
+        <item>等额本金</item>
+        <item>等额本息</item>
+    </array>
+
+    <array name="SelectorRegularMod">
+        <item>到期还本付息</item>
+        <item>等额本金</item>
+        <item>等额本息</item>
+        <item>每日付息，到期还本</item>
+        <item>每月付息，到期还本</item>
+        <item>每季付息，到期还本</item>
+    </array>
+
+
+    <!-- ***************************** 外汇信息 ***************************** -->
+
+    <array name="foreignHomeSelectorMenu">
+        <item>美元</item>
+        <item>欧元</item>
+        <item>英镑</item>
+        <item>日元</item>
+        <item>澳大利亚元</item>
+        <item>加拿大元</item>
+        <item>瑞士法郎</item>
+        <item>港币</item>
+        <item>澳门币</item>
+        <item>新台币</item>
+        <item>新西兰元</item>
+        <item>新加坡元</item>
+        <item>韩元</item>
+        <item>泰铢</item>
+    </array>
+
+    <array name="foreignHomeSelectorMenuIcon">
+        <item>wh_icon_mg</item>
+        <item>wh_icon_oy</item>
+        <item>wh_icon_yg</item>
+        <item>wh_icon_rb</item>
+        <item>wh_icon_adly</item>
+        <item>wh_icon_jnd</item>
+        <item>wh_icon_rs</item>
+        <item>wh_icon_zgxg</item>
+        <item>wh_icon_am</item>
+        <item>wh_icon_zgtw</item>
+        <item>wh_icon_xxl</item>
+        <item>wh_icon_xjp</item>
+        <item>wh_icon_hg</item>
+        <item>wh_icon_tg</item>
+    </array>
+
+    <array name="foreignHomeSelectorMenuCompany">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>HKD</item>
+        <item>MOP</item>
+        <item>TWD</item>
+        <item>NZD</item>
+        <item>SGD</item>
+        <item>KRW</item>
+        <item>THB</item>
+    </array>
+
+
+    <!-- ***************************** 添加资产信息 ***************************** -->
+    <!-- 生活资产 -->
+    <array name="AssetsLiveMenuTvShow">
+        <item>现金</item>
+        <item>银行卡</item>
+        <item>信用卡</item>
+        <item>账户余额</item>
+        <item>公积金</item>
+        <item>贷款/欠款</item>
+        <item>借出/应收</item>
+        <item>固定资产</item>
+    </array>
+
+    <array name="AssetsLiveMenuIcon">
+        <item>icon_live_1</item>
+        <item>icon_live_2</item>
+        <item>icon_live_3</item>
+        <item>icon_live_4</item>
+        <item>icon_live_5</item>
+        <item>icon_live_6</item>
+        <item>icon_live_7</item>
+        <item>icon_live_8</item>
+    </array>
+
+    <!--  理财资产 -->
+    <array name="AssetsPropertyMenuTvShow">
+        <item>P2P网贷</item>
+        <item>货币基金</item>
+        <item>基金</item>
+        <item>股票</item>
+        <item>定期存款</item>
+        <item>银行理财</item>
+    </array>
+
+    <array name="AssetsPropertyMenuIcon">
+        <item>icon_property_1</item>
+        <item>icon_property_2</item>
+        <item>icon_property_3</item>
+        <item>icon_property_4</item>
+        <item>icon_property_5</item>
+        <item>icon_property_6</item>
+    </array>
+
+    <!--  理财资产 -->
+    <array name="AssetsNationalMenuTvShow">
+        <item>国债</item>
+        <item>保险理财</item>
+        <item>私募</item>
+        <item>信托</item>
+        <item>票据</item>
+        <item>外汇</item>
+        <item>数字货币</item>
+    </array>
+
+    <array name="AssetsNationalMenuIcon">
+        <item>icon_national_1</item>
+        <item>icon_national_2</item>
+        <item>icon_national_3</item>
+        <item>icon_national_4</item>
+        <item>icon_national_5</item>
+        <item>icon_national_6</item>
+        <item>icon_national_7</item>
+    </array>
+
+    <!--  其他 -->
+    <array name="AssetsOtherMenuTvShow">
+        <item>其他</item>
+    </array>
+
+    <array name="AssetsOtherMenuIcon">
+        <item>icon_other_add</item>
+    </array>
+
+    <!-- 选择银行列表 -->
+    <array name="SelectorBankList">
+        <item>建设银行</item>
+        <item>招商银行</item>
+        <item>中国银行</item>
+        <item>农业银行</item>
+        <item>工商银行</item>
+        <item>交通银行</item>
+        <item>中信银行</item>
+        <item>平安银行</item>
+        <item>广发银行</item>
+        <item>兴业银行</item>
+        <item>民生银行</item>
+        <item>中国邮政储蓄银行</item>
+    </array>
+
+    <array name="SelectorBankIcon">
+        <item>icon_js</item>
+        <item>icon_zs</item>
+        <item>icon_ch</item>
+        <item>icon_ny</item>
+        <item>icon_gs</item>
+        <item>icon_jt</item>
+        <item>icon_zx</item>
+        <item>icon_pa</item>
+        <item>icon_gf</item>
+        <item>icon_xy</item>
+        <item>icon_ms</item>
+        <item>icon_yz</item>
+    </array>
+
+    <array name="SelectorMoneyType">
+        <item>人民币</item>
+        <item>美元</item>
+        <item>英镑</item>
+        <item>越南盾</item>
+        <item>瑞士法郎</item>
+        <item>卢布</item>
+        <item>韩元</item>
+        <item>日元</item>
+    </array>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Senior_name"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentHint="@string/Simple_msg_8"
+        app:uiContentTitleText="@string/Simple_msg_1" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Senior_number"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/Simple_msg_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal">
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/Senior_rate"
+            style="@style/UiContentStyle_input"
+            android:layout_weight="1"
+            app:uiContentGravity="right"
+            app:uiContentTitleText="@string/Simple_msg_3" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Senior_year"
+                style="@style/menuRadioButtonStyle"
+                android:checked="true"
+                android:text="@string/year" />
+
+            <RadioButton
+                android:id="@+id/Senior_month"
+                style="@style/menuRadioButtonStyle"
+                android:text="@string/month" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View style="@style/LineViewStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal">
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/Senior_time"
+            style="@style/UiContentStyle_input"
+            android:layout_weight="1"
+            app:uiContentGravity="right"
+            app:uiContentTitleText="@string/Simple_msg_4" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Senior_time_month"
+                style="@style/menuRadioButtonStyle"
+                android:checked="true"
+                android:text="@string/month" />
+
+            <RadioButton
+                android:id="@+id/Senior_time_day"
+                style="@style/menuRadioButtonStyle"
+                android:text="@string/day" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Senior_start_time"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentGravity="right"
+        app:uiContentText="2017-5-2"
+        app:uiContentTitleText="@string/Simple_msg_5" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Senior_time_mode"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentGravity="right"
+        app:uiContentText="@string/Simple_msg_7"
+        app:uiContentTitleText="@string/Simple_msg_6" />
+
+    <Button
+        android:id="@+id/Senior_Submit"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit" />
+
+</LinearLayout>

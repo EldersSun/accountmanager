@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accounting_home_top_imgShow"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/d5"
+        android:layout_marginTop="@dimen/d5"
+        android:background="@drawable/linearframe"
+        android:orientation="horizontal">
+        <!-- 简单 -->
+        <RadioButton
+            android:id="@+id/addAssets_other_simple"
+            style="@style/menuRadioButtonStyle"
+            android:paddingLeft="@dimen/d50"
+            android:paddingRight="@dimen/d50"
+            android:checked="true"
+            android:text="@string/arrears_input_msg_1" />
+        <!-- 高级 -->
+        <RadioButton
+            android:id="@+id/addAssets_other_senior"
+            style="@style/menuRadioButtonStyle"
+            android:paddingLeft="@dimen/d50"
+            android:paddingRight="@dimen/d50"
+            android:text="@string/arrears_input_msg_2" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/addAssets_other_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/viewPaddingTop"/>
+
+</LinearLayout>

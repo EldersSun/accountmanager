@@ -1,0 +1,428 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_shape_backgroup_shape</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMarginBottom</item>
+        <item name="android:padding">@dimen/buttonPadding_S</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:layout_marginTop">@dimen/buttonMarginTop_S</item>
+        <item name="android:minHeight">@dimen/buttonMinHeight</item>
+        <item name="android:textSize">@dimen/contentTextSize_x</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="loginButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/blue_btn_shape_backgroup_shape</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMarginBottom</item>
+        <item name="android:padding">@dimen/buttonPadding_S</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:layout_marginTop">@dimen/viewPaddingTop</item>
+        <item name="android:minHeight">@dimen/buttonMinHeight</item>
+        <item name="android:textSize">@dimen/contentTextSize_x</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/d30</item>
+        <item name="android:layout_marginRight">@dimen/d30</item>
+    </style>
+
+    <style name="buttonStyleNoPadding">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/blue_btn_shape_backgroup_shape</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textSize">@dimen/content_l</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="LineViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grayColor</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="loginLineViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/type_classic_color_1</item>
+        <item name="android:layout_marginLeft">@dimen/d30</item>
+        <item name="android:layout_marginRight">@dimen/d30</item>
+    </style>
+
+    <style name="style_contacts">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d1</item>
+        <item name="android:layout_marginLeft">@dimen/d30</item>
+        <item name="android:layout_marginRight">@dimen/d80</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/transparentColor</item>
+        <item name="android:layout_marginLeft">@dimen/editTextPadding</item>
+        <item name="android:layout_marginRight">@dimen/editTextPadding</item>
+        <item name="android:minHeight">@dimen/buttonMinHeight</item>
+        <item name="android:maxLength">11</item>
+        <item name="android:textSize">@dimen/uiContentTextSize_m</item>
+    </style>
+
+    <style name="radioButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/d5</item>
+        <item name="android:scaleX">0.7</item>
+        <item name="android:scaleY">0.7</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/s14</item>
+        <item name="android:textColor">@color/radiobtn_textcolor_selector</item>
+    </style>
+
+    <style name="menuRadioButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/s14</item>
+        <item name="android:textColor">@color/accounting_home_menu_type_selector_textcolor</item>
+        <item name="android:paddingLeft">@dimen/d20</item>
+        <item name="android:paddingRight">@dimen/d20</item>
+        <item name="android:paddingTop">@dimen/d10</item>
+        <item name="android:paddingBottom">@dimen/d10</item>
+        <item name="android:background">@drawable/accounting_home_type_selector</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <!-- 页面提示语Style -->
+    <style name="TextMsgStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/transparentColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/s12</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:padding">@dimen/d10</item>
+    </style>
+
+    <!-- 搜索Style -->
+    <style name="SearchStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/d20</item>
+        <item name="android:layout_marginRight">@dimen/d20</item>
+        <item name="android:layout_marginTop">@dimen/d10</item>
+        <item name="android:layout_marginBottom">@dimen/d10</item>
+        <item name="android:background">@drawable/serch_back</item>
+        <item name="android:drawablePadding">@dimen/d10</item>
+        <item name="android:drawableLeft">@drawable/serch_icon</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">@dimen/d130</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="login_input_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/d30</item>
+        <item name="android:layout_marginRight">@dimen/d30</item>
+        <item name="android:paddingBottom">@dimen/d10</item>
+        <item name="android:paddingTop">@dimen/d15</item>
+        <item name="android:background">@color/transparentColor</item>
+        <item name="android:drawablePadding">@dimen/d10</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/s14</item>
+    </style>
+
+
+    <!-- ********************************** UicontentStyle ********************************** -->
+    <!-- 列表显示不可输入有边距的不显示内容style -->
+    <style name="UiContentStyle_lvShowNotContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/RowHeight</item>
+        <item name="android:background">@color/whiteColor</item>
+        <item name="android:paddingLeft">@dimen/uiContentPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/uiContentPaddingRight</item>
+        <item name="com.accountingmanager:uiContentImgBackgRoundResource">
+            @mipmap/icon_home_product_arrow
+        </item>
+        <item name="com.accountingmanager:uiContentClickFlag">true</item>
+        <item name="com.accountingmanager:uiContentInputFlag">false</item>
+        <item name="com.accountingmanager:uiContentVisibility">invisible</item>
+        <item name="com.accountingmanager:uiContentUnifiedTextColor">@color/color666666</item>
+        <item name="com.accountingmanager:uiContentTitleWidth">@dimen/contentTextSize_l</item>
+        <item name="com.accountingmanager:uiContentTitleTextSize">@dimen/contentTextSize_l</item>
+        <item name="com.accountingmanager:uiContentGravity">left</item>
+        <item name="com.accountingmanager:uiContentWidth">@dimen/uiContentContentWidth</item>
+    </style>
+
+    <!-- 列表显示不可输入没有边距的不显示内容style -->
+    <style name="UiContentStyle_lvShowNotPaddingNotContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/RowHeight</item>
+        <item name="android:background">@color/whiteColor</item>
+        <item name="com.accountingmanager:uiContentImgBackgRoundResource">
+            @mipmap/icon_home_product_arrow
+        </item>
+        <item name="com.accountingmanager:uiContentClickFlag">true</item>
+        <item name="com.accountingmanager:uiContentInputFlag">false</item>
+        <item name="com.accountingmanager:uiContentVisibility">invisible</item>
+        <item name="com.accountingmanager:uiContentUnifiedTextColor">@color/color666666</item>
+        <item name="com.accountingmanager:uiContentTitleWidth">@dimen/uiContentTitleWidth</item>
+        <item name="com.accountingmanager:uiContentTitleTextSize">@dimen/contentTextSize_l</item>
+        <item name="com.accountingmanager:uiContentGravity">left</item>
+        <item name="com.accountingmanager:uiContentWidth">@dimen/uiContentContentWidth</item>
+    </style>
+    <!-- 列表显示不可输入有边距的style -->
+    <style name="UiContentStyle_lvShow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/RowHeight</item>
+        <item name="android:background">@color/whiteColor</item>
+        <item name="android:paddingLeft">@dimen/uiContentPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/uiContentPaddingRight</item>
+        <item name="com.accountingmanager:uiContentClickFlag">true</item>
+        <item name="com.accountingmanager:uiContentInputFlag">false</item>
+        <item name="com.accountingmanager:uiContentUnifiedTextColor">@color/color666666</item>
+        <item name="com.accountingmanager:uiContentTitleWidth">@dimen/uiContentTitleWidth</item>
+        <item name="com.accountingmanager:uiContentTitleTextSize">@dimen/contentTextSize_l</item>
+        <item name="com.accountingmanager:uiContentTextSize">@dimen/contentTextSize_l</item>
+        <item name="com.accountingmanager:uiContentImgBackgRoundResource">
+            @mipmap/icon_home_product_arrow
+        </item>
+        <item name="com.accountingmanager:uiContentGravity">right</item>
+        <item name="com.accountingmanager:uiContentWidth">@dimen/uiContentContentWidth</item>
+    </style>
+
+    <!-- 列表显示不可输入没有边距的style -->
+    <style name="UiContentStyle_lvShowNotPadding">
+        <item name="android:background">@color/whiteColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/RowHeight</item>
+        <item name="com.accountingmanager:uiContentClickFlag">true</item>
+        <item name="com.accountingmanager:uiContentInputFlag">false</item>
+        <item name="com.accountingmanager:uiContentVisibility">visibility</item>
+        <item name="com.accountingmanager:uiContentImgBackgRoundResource">
+            @mipmap/icon_home_product_arrow
+        </item>
+        <item name="com.accountingmanager:uiContentUnifiedTextColor">@color/color666666</item>
+        <item name="com.accountingmanager:uiContentTitleWidth">@dimen/uiContentTitleWidth</item>
+        <item name="com.accountingmanager:uiContentTextSize">@dimen/contentTextSize_l</item>
+        <item name="com.accountingmanager:uiContentTitleTextSize">@dimen/contentTextSize_l</item>
+        <item name="com.accountingmanager:uiContentGravity">left</item>
+        <item name="com.accountingmanager:uiContentWidth">@dimen/uiContentContentWidth</item>
+    </style>
+
+    <!-- 可以入输入的列表的style -->
+    <style name="UiContentStyle_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/RowHeight</item>
+        <item name="android:paddingLeft">@dimen/uiContentPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/uiContentPaddingRight</item>
+        <item name="android:background">@color/whiteColor</item>
+        <item name="com.accountingmanager:uiContentClickFlag">true</item>
+        <item name="com.accountingmanager:uiContentInputFlag">true</item>
+        <item name="com.accountingmanager:uiContentVisibility">visibility</item>
+        <item name="com.accountingmanager:uiContentUnifiedTextColor">@color/color666666</item>
+        <item name="com.accountingmanager:uiContentTitleWidth">@dimen/uiContentTitleWidth_input
+        </item>
+        <item name="com.accountingmanager:uiContentTitleTextSize">@dimen/contentTextSize_l</item>
+        <item name="com.accountingmanager:uiContentTextSize">@dimen/contentTextSize_l</item>
+        <item name="com.accountingmanager:uiContentGravity">right</item>
+        <item name="com.accountingmanager:uiContentWidth">@dimen/uiContentContentWidth_input</item>
+    </style>
+
+    <style name="ImgContentBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/RowHeight</item>
+        <item name="android:minHeight">@dimen/RowHeight</item>
+        <item name="android:drawableRight">@mipmap/icon_home_product_arrow</item>
+        <item name="android:textColor">@color/color666666</item>
+        <item name="android:background">@color/transparentColor</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">25dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textSize">@dimen/contentTextSize_l</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="TvShowMessageStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/whiteColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/s12</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="cycleRadioStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/radiobtn_back_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleX">0.8</item>
+        <item name="android:scaleY">0.8</item>
+        <item name="android:textColor">@color/radiobtn_textcolor_selector</item>
+        <item name="android:textSize">@dimen/contentTextSize_l</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="getCodeBtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_shape_backgroup_shape</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+
+    <!-- 登录对话框风格 -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <!-- 贷款状态页面 -->
+    <style name="UiContentStyle_loan_lvShow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/RowHeight</item>
+        <item name="android:background">@color/whiteColor</item>
+        <item name="android:paddingLeft">@dimen/uiContentPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/uiContentPaddingRight</item>
+        <item name="com.accountingmanager:uiContentClickFlag">true</item>
+        <item name="com.accountingmanager:uiContentInputFlag">false</item>
+        <item name="com.accountingmanager:uiContentcolorFlag">false</item>
+        <item name="com.accountingmanager:uiContentTitleColor">@color/loan_detail_text</item>
+        <item name="com.accountingmanager:uiContentColor">@color/loan_bank_text</item>
+        <item name="com.accountingmanager:uiContentTitleWidth">@dimen/d40</item>
+        <item name="com.accountingmanager:uiContentTitleTextSize">@dimen/s14</item>
+        <item name="com.accountingmanager:uiContentTextSize">@dimen/s13</item>
+        <item name="com.accountingmanager:uiContentWidth">@dimen/uiContentContentWidth</item>
+    </style>
+
+
+    <style name="loanButtonStyle">
+        <item name="android:background">@drawable/btn_shape_backgroup_shape</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMarginBottom</item>
+        <item name="android:layout_marginLeft">@dimen/buttonMarginLeft</item>
+        <item name="android:padding">@dimen/buttonPadding_S</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:layout_marginRight">@dimen/buttonMarginRight</item>
+        <item name="android:layout_marginTop">@dimen/d10</item>
+        <item name="android:minHeight">@dimen/buttonMinHeight</item>
+        <item name="android:textSize">@dimen/contentTextSize_x</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="shareButtonStyle">
+        <item name="android:background">@drawable/btn_shape_backgroup_shape</item>
+        <item name="android:layout_marginBottom">@dimen/d10</item>
+        <item name="android:padding">@dimen/buttonPadding_S</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:layout_marginTop">@dimen/d20</item>
+        <item name="android:minHeight">@dimen/d30</item>
+        <item name="android:textSize">@dimen/contentTextSize_x</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 自定义loading view -->
+    <style name="AppTheme.Dialog" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparentColor</item>
+        <item name="android:maxWidth">600dp</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 窗口背景色 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 窗口是否半透明——是（与第一条配合使用） -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 这个不设置的话，可能会出现边框黑线 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!-- 窗口弹出效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 是否允许背景模糊 -->
+    </style>
+    <!-- 自定义loading view end -->
+
+    <!--全屏dialog 用于查看协议 背景透明-->
+    <!--<item name="android:windowFrame">@null</item>&lt;!&ndash;边框&ndash;&gt;-->
+    <!---->
+    <style name="share_dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowBackground">@color/transparentColor</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+    </style>
+
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/national_content_input_number"
+        style="@style/UiContentStyle_input"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/national_msg_4" />
+
+    <TextView
+        style="@style/TextMsgStyle"
+        android:gravity="left"
+        android:text="@string/national_msg_5" />
+
+    <Button
+        android:id="@+id/national_content_input_submit"
+        style="@style/buttonStyle"
+        android:text="@string/submit" />
+
+</LinearLayout>

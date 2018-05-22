@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bank_financing_content_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:paddingBottom="@dimen/d5"
+        android:paddingTop="@dimen/d5">
+
+        <TextView
+            android:id="@+id/bank_financing_content_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d5"
+            android:layout_marginTop="@dimen/d5"
+            android:text="理财产品详细名称"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/s14" />
+
+        <TextView
+            android:id="@+id/bank_financing_content_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bank_financing_content_item_name"
+            android:layout_margin="@dimen/d5"
+            android:text="理财产品详细名称"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/s10" />
+
+        <TextView
+            android:id="@+id/bank_financing_content_item_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/d30"
+            android:text="5.70%"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/s10" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/d5"
+            android:src="@mipmap/icon_home_product_arrow" />
+
+    </RelativeLayout>
+
+    <View style="@style/LineViewStyle" />
+
+</LinearLayout>

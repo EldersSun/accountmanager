@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:orientation="vertical">
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/lia_selector_Arrears"
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentText="@string/lia_selector_msg_2"
+            app:uiContentGravity="right"
+            app:uiContentTitleImgBackgRoundResource="@drawable/icon_lia_arrears"
+            app:uiContentTitleText="@string/lia_selector_msg_1" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/lia_selector_loan"
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentText="@string/lia_selector_msg_3"
+            app:uiContentTitleImgBackgRoundResource="@drawable/icon_lia_loan"
+            app:uiContentGravity="right"
+            app:uiContentTitleText="@string/lia_selector_msg_4" />
+
+        <View style="@style/LineViewStyle" />
+
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/lia_selector_Mortgage"
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentTitleImgBackgRoundResource="@drawable/icon_lia_house"
+            app:uiContentGravity="right"
+            app:uiContentTitleText="@string/lia_selector_msg_5" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/lia_selector_CarLoan"
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentGravity="right"
+            app:uiContentTitleImgBackgRoundResource="@drawable/icon_lia_car"
+            app:uiContentTitleText="@string/lia_selector_msg_6" />
+    </LinearLayout>
+
+</LinearLayout>

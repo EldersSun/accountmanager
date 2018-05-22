@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Shares_input_content_number"
+        style="@style/UiContentStyle_input"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        app:uiContentGravity="right"
+        app:uiContentInputType="amount"
+        app:uiContentTitleText="@string/Shares_input_content_msg_1" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Shares_input_content_emelent"
+        style="@style/UiContentStyle_input"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/Shares_input_content_msg_2" />
+
+    <TextView
+        style="@style/TextMsgStyle"
+        android:gravity="left"
+        android:text="@string/Shares_input_content_msg_3" />
+
+    <Button
+        android:id="@+id/Shares_input_content_submit"
+        style="@style/buttonStyle"
+        android:text="@string/submit" />
+
+</LinearLayout>

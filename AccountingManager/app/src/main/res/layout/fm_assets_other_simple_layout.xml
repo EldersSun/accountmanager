@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/addAssets_other_simple_name"
+        style="@style/UiContentStyle_input"
+        app:uiContentHint="@string/addAssets_other_simple_msg_1"
+        app:uiContentTitleText="@string/addAssets_other_simple_msg_2" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/addAssets_other_simple_number"
+        style="@style/UiContentStyle_input"
+        app:uiContentHint="0"
+        app:uiContentTitleText="@string/addAssets_other_simple_msg_3" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/addAssets_other_simple_rate"
+        style="@style/UiContentStyle_input"
+        app:uiContentHint="@string/addAssets_other_simple_msg_4"
+        app:uiContentTitleText="@string/addAssets_other_simple_msg_5" />
+
+    <TextView
+        style="@style/TextMsgStyle"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:gravity="left"
+        android:text="@string/addAssets_other_simple_msg_6"
+        android:textSize="@dimen/s12" />
+
+    <EditText
+        android:id="@+id/addAssets_other_simple_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:hint="@string/addAssets_other_simple_msg_7"
+        android:paddingBottom="@dimen/d30"
+        android:paddingLeft="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:paddingTop="@dimen/d30" />
+
+    <Button
+        android:id="@+id/addAssets_other_simple_submit"
+        style="@style/buttonStyle"
+        android:text="@string/submit" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="appColorDeepen">#2586FC</color>
+
+    <!-- 透明色 -->
+    <color name="transparentColor">#00000000</color>
+    <color name="halftransparent">#66FFFFFF</color>
+    <color name="lead">#66666666</color>
+
+    <!-- 白色 -->
+    <color name="whiteColor">#FFFFFF</color>
+
+    <!-- 黑色 -->
+    <color name="blackColor">#000000</color>
+
+    <!-- 红色 -->
+    <color name="redColor">#FF0000</color>
+
+    <color name="linearColor">#ccc</color>
+    <color name="color666666">#666666</color>
+    <color name="colorF6">#f6f6f6</color>
+    <color name="textColor">#9199AC</color>
+    <color name="titleColor">#374259</color>
+    <color name="control_background">#cc4285f4</color>
+
+    <color name="blueColor">#6ab2fa</color>
+    <color name="grayColor">#ebebeb</color>
+    <color name="addAssetsTypeMenuTextColor">#BEC5D4</color>
+
+    <!--<color name="appColor">#3098fd</color>-->
+    <!--<color name="appColor">#4998F7</color>-->
+    <color name="appColor">#3196FE</color>
+    <color name="appColor1">#fffde8</color>
+    <color name="appColor2">#ff9d02</color>
+    <color name="appColor3">#fce6bf</color>
+    <color name="appColor4">#c8e8fc</color>
+    <color name="appColor5">#f2f6f9</color>
+    <color name="appColor6">#c65767</color>
+    <color name="appColor7">#d27985</color>
+    <color name="appColor8">#96abc6</color>
+    <color name="line_color">#F3F3F3</color>
+    <color name="loan_big_text">#444444</color>
+    <color name="loan_bank_text">#777777</color>
+    <color name="loan_time_text">#9D9D9D</color>
+    <color name="loan_detail_text">#353535</color>
+
+    <drawable name="selector_btn_pressed_true">#666666</drawable>
+    <drawable name="selector_btn_pressed_false">#000000</drawable>
+
+    <color name="province_line_border">#C7C7C7</color>
+
+    <color name="background_holo_light">#fff3f3f3</color>
+    <color name="Gray2">#9d9d9d</color>
+    <color name="custom_alert_cancel">#5AAFCE</color>
+    <color name="blue_light">#ff33b5e5</color>
+    <color name="dialog_color">#C6C6C6</color>
+
+    <color name="type_classic_color_1">#6AB2FA</color>
+    <color name="type_classic_color_2">#5CBCA4</color>
+    <color name="type_classic_color_3">#FB7A7A</color>
+    <color name="type_classic_color_4">#FDBE51</color>
+
+</resources>

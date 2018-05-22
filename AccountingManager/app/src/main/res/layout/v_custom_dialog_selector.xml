@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linearframe">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d51"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Custom_Dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/d50"
+            android:text="@string/selector_money_type"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/Custom_Dialog_Selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorF6"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_above="@+id/dialog_linearLayout"
+        android:background="@color/colorF6" />
+
+    <LinearLayout
+        android:id="@+id/dialog_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/RowHeight"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Custom_Dialog_Selector_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparentColor"
+            android:text="@string/cancel"
+            android:textColor="@drawable/selectortextcolor"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="@dimen/d1"
+            android:layout_height="match_parent"
+            android:background="@color/colorF6" />
+
+        <Button
+            android:id="@+id/Custom_Dialog_Selector_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparentColor"
+            android:text="@string/ok"
+            android:textColor="@drawable/selectortextcolor"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

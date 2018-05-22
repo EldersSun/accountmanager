@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/Combination_name"
+            style="@style/UiContentStyle_input"
+            app:uiContentGravity="right"
+            app:uiContentTitleWidth="@dimen/d100"
+            app:uiContentWidth="@dimen/d180"
+            app:uiContentHint="@string/Business_msg_6"
+            app:uiContentTitleText="@string/Business_msg_1" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/Combination_business_number"
+            style="@style/UiContentStyle_input"
+            android:layout_marginTop="@dimen/viewPaddingTop"
+            app:uiContentTitleWidth="@dimen/d100"
+            app:uiContentWidth="@dimen/d180"
+            app:uiContentGravity="right"
+            app:uiContentTitleText="@string/Combination_msg_1" />
+
+        <View style="@style/LineViewStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:orientation="horizontal">
+
+            <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+                android:id="@+id/Combination_business_rate"
+                style="@style/UiContentStyle_input"
+                android:layout_weight="1"
+                app:uiContentGravity="right"
+                app:uiContentTitleWidth="@dimen/d100"
+                app:uiContentWidth="@dimen/d180"
+                app:uiContentTitleText="@string/Combination_msg_2" />
+
+            <Button
+                android:id="@+id/Combination_business_selector_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/viewMarginpadding"
+                android:layout_marginRight="@dimen/viewMarginpadding"
+                android:background="@mipmap/icon_home_product_arrow" />
+        </LinearLayout>
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/Combination_fund_Principal"
+            style="@style/UiContentStyle_input"
+            app:uiContentTitleWidth="@dimen/d100"
+            app:uiContentWidth="@dimen/d180"
+            app:uiContentGravity="right"
+            app:uiContentTitleText="@string/Combination_msg_3" />
+
+        <View style="@style/LineViewStyle" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:orientation="horizontal">
+
+            <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+                android:id="@+id/Combination_fund_rate"
+                style="@style/UiContentStyle_input"
+                android:layout_weight="1"
+                app:uiContentGravity="right"
+                app:uiContentTitleWidth="@dimen/d100"
+                app:uiContentWidth="@dimen/d180"
+                app:uiContentTitleText="@string/Combination_msg_10" />
+
+            <Button
+                android:id="@+id/Combination_fund_selector_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/viewMarginpadding"
+                android:layout_marginRight="@dimen/viewMarginpadding"
+                android:background="@mipmap/icon_home_product_arrow" />
+        </LinearLayout>
+
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/Combination_time"
+            style="@style/UiContentStyle_lvShow"
+            android:layout_marginTop="@dimen/viewPaddingTop"
+            app:uiContentGravity="right"
+            app:uiContentText="20年/240期"
+            app:uiContentTitleText="@string/Combination_msg_4" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/Combination_startTime"
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentGravity="right"
+            app:uiContentText="2017-5-3"
+            app:uiContentTitleText="@string/Combination_msg_5" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/Combination_mode"
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentGravity="right"
+            app:uiContentText="@string/Combination_msg_9"
+            app:uiContentTitleText="@string/Combination_msg_6" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/Combination_mode_day"
+            style="@style/UiContentStyle_lvShow"
+            android:layout_marginTop="@dimen/viewPaddingTop"
+            app:uiContentGravity="right"
+            app:uiContentText="@string/Combination_msg_8"
+            app:uiContentTitleText="@string/Combination_msg_7" />
+
+        <Button
+            android:id="@+id/Combination_submit"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit" />
+    </LinearLayout>
+</ScrollView>

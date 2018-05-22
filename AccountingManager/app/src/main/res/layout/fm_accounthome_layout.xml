@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@drawable/me_head_img">
+
+            <com.accountingmanager.Sys.Widgets.RoundImageView
+                android:id="@+id/account_home_head_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d80"
+                android:background="@drawable/user_default_head_back"
+                android:padding="@dimen/d5"
+                android:src="@drawable/user_default_head" />
+
+            <TextView
+                android:id="@+id/account_home_head_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account_home_head_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/viewPaddingTop"
+                android:text="@string/account_home_msg_8"
+                android:textColor="@color/whiteColor" />
+
+            <TextView
+                android:id="@+id/account_home_head_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account_home_head_state"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/viewPaddingTop"
+                android:background="@drawable/account_home_number"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/d30"
+                android:text="0"
+                android:textColor="@color/whiteColor" />
+        </RelativeLayout>
+
+        <View style="@style/LineViewStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/RowHeight"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/uiContentPaddingLeft"
+            android:paddingRight="@dimen/uiContentPaddingRight">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d3"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/account_home_menu_icon_1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/d7"
+                android:paddingRight="@dimen/d15"
+                android:text="@string/account_home_msg_1"
+                android:textColor="@color/color666666"
+                android:textSize="@dimen/contentTextSize_l" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:paddingRight="@dimen/d7"
+                android:src="@drawable/account_home_safety_shield" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_home_product_arrow" />
+        </LinearLayout>
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentColor="@color/grayColor"
+            app:uiContentGravity="right"
+            app:uiContentText="未开启"
+            app:uiContentTitleColor="@color/color666666"
+            app:uiContentTitleImgBackgRoundResource="@drawable/account_home_menu_icon_2"
+            app:uiContentTitleText="@string/account_home_msg_2"
+            app:uiContentTitleWidth="@dimen/d120"
+            app:uiContentcolorFlag="false" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentTitleImgBackgRoundResource="@drawable/account_home_menu_icon_3"
+            app:uiContentTitleText="@string/account_home_msg_3" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            style="@style/UiContentStyle_lvShow"
+            android:layout_marginTop="@dimen/viewPaddingTop"
+            app:uiContentColor="@color/grayColor"
+            app:uiContentGravity="right"
+            app:uiContentText="未开启"
+            app:uiContentTitleColor="@color/color666666"
+            app:uiContentTitleImgBackgRoundResource="@drawable/account_home_menu_icon_4"
+            app:uiContentTitleText="@string/account_home_msg_4"
+            app:uiContentcolorFlag="false" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentTitleImgBackgRoundResource="@drawable/account_home_menu_icon_5"
+            app:uiContentTitleText="@string/account_home_msg_5" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentTitleImgBackgRoundResource="@drawable/account_home_menu_icon_6"
+            app:uiContentTitleText="@string/account_home_msg_6" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            style="@style/UiContentStyle_lvShow"
+            android:layout_marginBottom="@dimen/d20"
+            android:layout_marginTop="@dimen/viewPaddingTop"
+            app:uiContentTitleImgBackgRoundResource="@drawable/account_home_menu_icon_7"
+            app:uiContentTitleText="@string/account_home_msg_7" />
+
+
+    </LinearLayout>
+
+</ScrollView>

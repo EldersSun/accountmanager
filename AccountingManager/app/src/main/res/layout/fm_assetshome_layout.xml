@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accounting_home_top_imgShow"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d5"
+            android:orientation="horizontal"
+            android:padding="@dimen/d5">
+
+            <RadioButton
+                android:id="@+id/Assets_Home_Analysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@color/transparentColor"
+                android:button="@null"
+                android:checked="true"
+                android:drawableBottom="@drawable/assets__home_selector_menu_drawable"
+                android:paddingBottom="@dimen/d5"
+                android:paddingLeft="@dimen/d20"
+                android:paddingRight="@dimen/d20"
+                android:text="@string/Assets_Home_msg_1"
+                android:textColor="@color/assets_home_selector_menu_color" />
+
+            <RadioButton
+                android:id="@+id/Assets_Home_Course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@color/transparentColor"
+                android:button="@null"
+                android:drawableBottom="@drawable/assets__home_selector_menu_drawable"
+                android:drawablePadding="@dimen/d5"
+                android:paddingBottom="@dimen/d5"
+                android:paddingLeft="@dimen/d20"
+                android:paddingRight="@dimen/d20"
+                android:text="@string/Assets_Home_msg_2"
+                android:textColor="@color/assets_home_selector_menu_color" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/Assets_Home_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/viewPaddingTop" />
+</LinearLayout>

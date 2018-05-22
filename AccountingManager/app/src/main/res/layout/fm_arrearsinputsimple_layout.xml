@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Simple_name"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentHint="@string/Simple_msg_8"
+        app:uiContentTitleText="@string/Simple_msg_1" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Simple_Number"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/Simple_msg_2" />
+
+    <Button
+        android:id="@+id/Simple_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        style="@style/buttonStyle"/>
+
+</LinearLayout>

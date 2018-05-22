@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/d5"
+        android:layout_marginTop="@dimen/d5"
+        android:background="@drawable/linearframe"
+        android:orientation="horizontal">
+        <!-- 商业 -->
+        <RadioButton
+            android:id="@+id/mortgage_input_business"
+            style="@style/menuRadioButtonStyle"
+            android:paddingLeft="@dimen/d20"
+            android:paddingRight="@dimen/d20"
+            android:checked="true"
+            android:text="@string/mortgage_msg_1" />
+        <!-- 公积金 -->
+        <RadioButton
+            android:id="@+id/mortgage_input_fund"
+            style="@style/menuRadioButtonStyle"
+            android:paddingLeft="@dimen/d20"
+            android:paddingRight="@dimen/d20"
+            android:text="@string/mortgage_msg_2" />
+
+        <!-- 组合贷款 -->
+        <RadioButton
+            android:id="@+id/mortgage_input_combination"
+            style="@style/menuRadioButtonStyle"
+            android:paddingLeft="@dimen/d20"
+            android:paddingRight="@dimen/d20"
+            android:text="@string/mortgage_msg_3" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/mortgage_input_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/viewPaddingTop"/>
+
+</LinearLayout>

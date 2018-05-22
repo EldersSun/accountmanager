@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/d50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/s16" />
+    </RelativeLayout>
+
+    <com.accountingmanager.Sys.Widgets.RoundImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/d50"
+        android:layout_marginBottom="@dimen/d50"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/userLogin_input_userName"
+        style="@style/login_input_style"
+        android:drawableLeft="@drawable/login_icon_input"
+        android:hint="@string/login_msg_1"
+        android:inputType="number" />
+
+    <View style="@style/loginLineViewStyle" />
+
+    <Button
+        android:id="@+id/userLogin_input_submit"
+        style="@style/loginButtonStyle"
+        android:text="@string/login_msg_2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/isCheckCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/login_selector_checkbox_button"
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
+
+        <TextView
+            android:id="@+id/isCheckCreateAccountTvShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/d3"
+            android:lineSpacingExtra="@dimen/d5"
+            android:text="@string/login_msg_3"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/s14" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginTop="@dimen/d50"
+        android:src="@drawable/login_other_icon" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginTop="@dimen/d30"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/userLogin_input_weChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparentColor"
+            android:src="@drawable/login_wechat" />
+
+        <ImageButton
+            android:id="@+id/userLogin_input_QQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparentColor"
+            android:src="@drawable/login_qq" />
+    </LinearLayout>
+</LinearLayout>

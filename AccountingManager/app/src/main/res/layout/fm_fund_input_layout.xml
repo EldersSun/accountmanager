@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:orientation="vertical">
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/fund_input_account"
+            style="@style/UiContentStyle_input"
+            app:uiContentGravity="right"
+            app:uiContentHint="@string/fund_inpt_message_2"
+            app:uiContentTitleText="@string/fund_inpt_message_1" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/fund_input_city"
+            style="@style/UiContentStyle_input"
+            app:uiContentGravity="right"
+            app:uiContentTitleText="@string/city" />
+
+        <Button
+            android:id="@+id/fund_input_submit"
+            style="@style/buttonStyle"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+</LinearLayout>

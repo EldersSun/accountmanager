@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/foreign_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d1"
+        android:background="@color/whiteColor"
+        android:paddingBottom="@dimen/d5"
+        android:paddingLeft="@dimen/d15"
+        android:paddingTop="@dimen/d5">
+
+        <ImageView
+            android:id="@+id/foreign_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/foreign_name"
+            style="@style/TextMsgStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/foreign_icon"
+            android:text="美元" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/viewMarginpadding"
+            android:src="@mipmap/icon_home_product_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

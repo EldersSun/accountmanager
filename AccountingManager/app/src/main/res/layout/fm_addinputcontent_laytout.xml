@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:orientation="vertical">
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/addInputContent_inputValue"
+            style="@style/UiContentStyle_input"
+            app:uiContentGravity="right"
+            app:uiContentTitleText="@string/addInputContentText_1" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/addInputContent_selector_type"
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentGravity="right"
+            app:uiContentText="@string/addInputContentText_3"
+            app:uiContentTitleText="@string/addInputContentText_2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d15"
+        android:text="@string/addInputContentText_4"
+        android:textColor="@color/titleColor"
+        android:textSize="@dimen/s12" />
+
+    <Button
+        android:id="@+id/addInputContent_selector_submit"
+        style="@style/buttonStyle"
+        android:text="@string/submit" />
+
+</LinearLayout>

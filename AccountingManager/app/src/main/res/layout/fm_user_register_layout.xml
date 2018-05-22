@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/User_Register_tvShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/d50"
+        android:layout_marginTop="@dimen/d30"
+        android:text="已向138 8888 8888发送验证短信"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/s14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/User_Register_code"
+            style="@style/login_input_style"
+            android:drawableLeft="@drawable/login_icon_code"
+            android:hint="@string/user_register_msg_1"
+            android:inputType="number" />
+
+        <com.accountingmanager.Sys.Widgets.CustomGetCodeWidgets
+            android:id="@+id/User_Register_getCode"
+            style="@style/buttonStyleNoPadding"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/d30"
+            android:paddingBottom="@dimen/d5"
+            android:paddingLeft="@dimen/d15"
+            android:paddingRight="@dimen/d15"
+            android:paddingTop="@dimen/d5"
+            android:text="@string/user_register_msg_2" />
+
+        <View
+            style="@style/loginLineViewStyle"
+            android:layout_below="@+id/User_Register_code" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/User_Register_pwd"
+        style="@style/login_input_style"
+        android:drawableLeft="@drawable/login_icon_pwd"
+        android:hint="@string/user_register_msg_3"
+        android:inputType="number" />
+
+    <View style="@style/loginLineViewStyle" />
+
+    <Button
+        android:id="@+id/User_Register_submit"
+        style="@style/loginButtonStyle"
+        android:text="@string/user_register_msg_4" />
+
+
+</LinearLayout>

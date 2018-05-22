@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/fund_details_senior_number"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/fund_details_senior_msg_1" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/fund_details_senior_time"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentGravity="right"
+        app:uiContentImgBackgRoundResource="@null"
+        app:uiContentText="@string/fund_details_senior_msg_2"
+        app:uiContentTitleText="@string/fund_details_senior_msg_3" />
+
+    <View style="@style/LineViewStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal">
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/fund_details_senior_rate"
+            style="@style/UiContentStyle_input"
+            android:layout_width="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:paddingRight="0dp"
+            app:uiContentGravity="right"
+            app:uiContentHint="0"
+            app:uiContentTitleText="@string/fund_details_senior_msg_4" />
+
+        <ImageView
+            android:id="@+id/fund_details_senior_selector_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/uiContentPaddingRight"
+            android:src="@mipmap/icon_home_product_arrow" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fund_details_senior_submit"
+        style="@style/buttonStyle"
+        android:text="@string/submit" />
+
+    <Button
+        android:id="@+id/fund_details_senior_fixed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d30"
+        android:background="@color/transparentColor"
+        android:layout_gravity="center"
+        android:text="@string/fund_details_senior_msg_5"
+        />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ********************************* 公用 ********************************* -->
+
+    <declare-styleable name="UiContentView">
+
+        <!-- 是否设置统一背景颜色 -->
+        <attr name="uiContentcolorFlag" format="reference|boolean" />
+        <!-- 设置统一背景颜色 -->
+        <attr name="uiContentUnifiedTextColor" format="reference|color" />
+        <!-- 设置title文字颜色 -->
+        <attr name="uiContentTitleColor" format="reference|color" />
+        <!-- 设置内容背景颜色 -->
+        <attr name="uiContentColor" format="reference|color" />
+        <!-- 设置title 的文字 -->
+        <attr name="uiContentTitleText" format="reference|string" />
+        <!-- 设置内容的文字 -->
+        <attr name="uiContentText" format="reference|string" />
+        <!-- 设置title字体大小 -->
+        <attr name="uiContentTitleTextSize" format="reference|dimension" />
+        <!-- 设置内容字体大小 -->
+        <attr name="uiContentTextSize" format="reference|dimension" />
+        <!-- 设置是否内容可以输入 -->
+        <attr name="uiContentInputFlag" format="reference|boolean" />
+        <!-- 设置内容提示信息 -->
+        <attr name="uiContentHint" format="reference|string" />
+        <!-- 设置内容是否可以点击 -->
+        <attr name="uiContentClickFlag" format="reference|boolean" />
+        <!-- 设置title的背景资源 -->
+        <attr name="uiContentTitleBackgroundResource" format="reference|color" />
+        <!-- 设置控件的整体背景资源 -->
+        <attr name="uiContentBackgRoundResource" format="reference|color" />
+        <!-- 设置控件title标示图标资源 -->
+        <attr name="uiContentTitleImgBackgRoundResource" format="reference" />
+        <!-- 设置控件content标示图标资源 -->
+        <attr name="uiContentImgBackgRoundResource" format="reference" />
+        <!-- 设置控件title宽度 -->
+        <attr name="uiContentTitleWidth" format="reference|dimension" />
+        <!-- 设置控件content宽度 -->
+        <attr name="uiContentWidth" format="reference|dimension" />
+        <!-- 设置是否换行 -->
+        <attr name="uiContentTextIsWrap" format="boolean" />
+        <!-- 设置是否显示title -->
+        <attr name="uiContentTitleVisibility">
+            <enum name="visibility" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <!-- 设置是否显示内容 -->
+        <attr name="uiContentVisibility">
+            <enum name="visibility" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <!-- 设置内容位置 -->
+        <attr name="uiContentGravity">
+            <enum name="left" value="1" />
+            <enum name="center" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+        <!-- 设置内容输入类型 -->
+        <attr name="uiContentInputType">
+            <flag name="amount" value="1" />
+            <flag name="phone" value="2" />
+            <flag name="email" value="3" />
+            <flag name="decimal" value="4" />
+            <flag name="signedDecimal" value="5" />
+            <flag name="password" value="6" />
+        </attr>
+        <!-- 内容可以显示的行数 -->
+        <attr name="uiContentLines" format="reference|integer" />
+        <!-- 最大输入数量 -->
+        <attr name="uiContentMaxLength" format="reference|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" format="integer" />
+        <attr name="type" format="integer" />
+    </declare-styleable>
+
+
+    <!-- 轮播图 -->
+    <declare-styleable name="FlowIndicator">
+        <!-- count：圆钮的数量 -->
+        <attr name="count" format="integer" />
+        <!-- radius：圆钮的半径 -->
+        <attr name="radiu" format="dimension" />
+        <!-- space：圆钮的的间距 -->
+        <attr name="space" format="dimension" />
+        <!-- normal_color： 圆钮缺省颜色 -->
+        <attr name="normal_color" format="color|reference" />
+        <!-- focus_color：圆钮焦点颜色 -->
+        <attr name="focus_color" format="color|reference" />
+    </declare-styleable>
+
+</resources>

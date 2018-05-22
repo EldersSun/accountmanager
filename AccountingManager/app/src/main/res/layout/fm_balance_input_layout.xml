@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/viewPaddingTop"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/account_Balance_name"
+        style="@style/UiContentStyle_input"
+        android:visibility="gone"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/accountName" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/account_Balance_input"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/accountBalance" />
+
+    <View style="@style/LineViewStyle" />
+
+    <Button
+        android:id="@+id/account_Balance_submit"
+        style="@style/buttonStyle"
+        android:text="@string/submit" />
+
+</LinearLayout>

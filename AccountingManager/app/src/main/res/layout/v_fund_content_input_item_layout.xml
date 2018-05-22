@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fund_content_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d5"
+        android:background="@color/grayColor"
+        android:orientation="vertical"
+        android:padding="@dimen/d5">
+
+        <TextView
+            android:id="@+id/fund_content_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="基金名称"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/s14" />
+
+        <TextView
+            android:id="@+id/fund_content_item_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="基金代码"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/s14" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/d5"
+        android:layout_marginTop="@dimen/d5"
+        android:background="@drawable/linearframe"
+        android:orientation="horizontal">
+        <!-- 定期 -->
+        <RadioButton
+            android:id="@+id/netLoan_input_home_regular"
+            style="@style/menuRadioButtonStyle"
+            android:layout_weight="1"
+            android:checked="true"
+            android:paddingLeft="@dimen/d30"
+            android:paddingRight="@dimen/d30"
+            android:text="@string/NetLoan_msg_1" />
+        <!-- 活期 -->
+        <RadioButton
+            android:id="@+id/netLoan_input_home_current"
+            style="@style/menuRadioButtonStyle"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/d30"
+            android:paddingRight="@dimen/d30"
+            android:text="@string/NetLoan_msg_2" />
+        <!-- 账户余额 -->
+        <RadioButton
+            android:id="@+id/netLoan_input_home_balance"
+            style="@style/menuRadioButtonStyle"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/d30"
+            android:paddingRight="@dimen/d30"
+            android:text="@string/NetLoan_msg_3" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/netLoan_input_home_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/viewPaddingTop" />
+
+</LinearLayout>

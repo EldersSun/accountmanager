@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/user_Login_tvShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d50"
+        android:layout_marginBottom="@dimen/d50"
+        android:text="1234567890"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/s24" />
+
+    <EditText
+        android:id="@+id/user_Login_input_pwd"
+        style="@style/login_input_style"
+        android:drawableLeft="@drawable/login_icon_pwd"
+        android:hint="@string/user_login_msg_1" />
+
+    <View style="@style/loginLineViewStyle" />
+
+    <Button
+        android:id="@+id/user_Login_submit"
+        style="@style/loginButtonStyle"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/user_Login_rePwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/transparentColor"
+        android:padding="@dimen/d15"
+        android:text="@string/user_login_msg_2"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/s14"
+        />
+
+
+</LinearLayout>

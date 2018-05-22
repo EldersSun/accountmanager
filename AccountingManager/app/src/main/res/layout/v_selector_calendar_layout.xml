@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueColor"
+        android:minHeight="@dimen/d80"
+        android:padding="@dimen/d20">
+
+        <TextView
+            android:id="@+id/SelectorCalendarYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017"
+            android:textSize="@dimen/s16"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SelectorCalendarTime"
+            android:layout_below="@id/SelectorCalendarYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5月2日周二"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/s24"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/SelectorCalendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_selectionColor="@color/blueColor"
+        app:mcv_showOtherDates="all" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/SelectorCalendarCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentColor"
+            android:padding="@dimen/d10"
+            android:text="@string/cancel"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/s14" />
+
+
+        <Button
+            android:id="@+id/SelectorCalendarOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentColor"
+            android:padding="@dimen/d10"
+            android:text="@string/ok"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/s14" />
+    </LinearLayout>
+
+</LinearLayout>

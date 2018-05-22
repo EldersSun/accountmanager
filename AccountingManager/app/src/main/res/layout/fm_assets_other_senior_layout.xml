@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/addAssets_other_senior_name"
+            style="@style/UiContentStyle_input"
+            app:uiContentGravity="right"
+            app:uiContentHint="@string/addAssets_other_senior_msg_1"
+            app:uiContentTitleText="@string/addAssets_other_senior_msg_2" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/addAssets_other_senior_number"
+            style="@style/UiContentStyle_input"
+            app:uiContentGravity="right"
+            app:uiContentHint="0"
+            app:uiContentTitleText="@string/addAssets_other_senior_msg_3" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/addAssets_other_senior_rate"
+            style="@style/UiContentStyle_input"
+            android:layout_marginTop="@dimen/viewPaddingTop"
+            app:uiContentGravity="right"
+            app:uiContentHint="0"
+            app:uiContentTitleText="@string/addAssets_other_senior_msg_4" />
+
+        <View style="@style/LineViewStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:orientation="horizontal">
+
+            <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+                android:id="@+id/addAssets_other_senior_time"
+                style="@style/UiContentStyle_input"
+                android:layout_weight="1"
+                app:uiContentGravity="right"
+                app:uiContentHint="@string/addAssets_other_senior_msg_18"
+                app:uiContentInputType="amount"
+                app:uiContentTitleText="@string/addAssets_other_senior_msg_5" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/addAssets_other_senior_month"
+                    style="@style/menuRadioButtonStyle"
+                    android:checked="true"
+                    android:text="@string/month" />
+
+                <RadioButton
+                    android:id="@+id/addAssets_other_senior_day"
+                    style="@style/menuRadioButtonStyle"
+                    android:text="@string/day" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/addAssets_other_senior_start_time"
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentGravity="right"
+            app:uiContentText="2017-5-2"
+            app:uiContentTitleText="@string/addAssets_other_senior_msg_6" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/addAssets_other_senior_mode"
+            style="@style/UiContentStyle_lvShow"
+            app:uiContentGravity="right"
+            app:uiContentText="@string/Simple_msg_7"
+            app:uiContentTitleText="@string/addAssets_other_senior_msg_7" />
+
+
+        <TextView
+            style="@style/TextMsgStyle"
+            android:layout_marginTop="@dimen/viewPaddingTop"
+            android:gravity="left"
+            android:text="@string/addAssets_other_simple_msg_6"
+            android:textSize="@dimen/s12" />
+
+        <EditText
+            android:id="@+id/addAssets_other_senior_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:hint="@string/addAssets_other_simple_msg_7"
+            android:paddingBottom="@dimen/d30"
+            android:paddingLeft="@dimen/d10"
+            android:paddingRight="@dimen/d10"
+            android:paddingTop="@dimen/d30" />
+
+        <Button
+            android:id="@+id/addAssets_other_senior_submit"
+            style="@style/buttonStyle"
+            android:text="@string/submit" />
+    </LinearLayout>
+</ScrollView>

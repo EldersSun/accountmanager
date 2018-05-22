@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor">
+
+    <RelativeLayout
+        android:id="@+id/accounting_home_top_imgShow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d180"
+        android:background="@mipmap/accounting_home_top_back">
+
+        <TextView
+            android:id="@+id/accounting_home_earnings_tvShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2000.00"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/s32" />
+
+        <Button
+            android:id="@+id/accounting_home_earnings_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accounting_home_earnings_tvShow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d5"
+            android:background="@drawable/earnings_back_img"
+            android:drawableRight="@drawable/earnings_arrows"
+            android:lines="1"
+            android:paddingRight="@dimen/d15"
+            android:text="@string/account_msg_4"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/s16" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/accounting_home_menu_selector_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accounting_home_top_imgShow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/d5"
+        android:layout_marginTop="@dimen/d5"
+        android:background="@drawable/linearframe"
+        android:orientation="horizontal">
+        <!-- 经典 -->
+        <RadioButton
+            android:id="@+id/accounting_home_type_Classic"
+            style="@style/menuRadioButtonStyle"
+            android:checked="true"
+            android:text="@string/account_msg_1" />
+        <!-- 分类 -->
+        <RadioButton
+            android:id="@+id/accounting_home_type_Classification"
+            style="@style/menuRadioButtonStyle"
+            android:text="@string/account_msg_2" />
+        <!-- 到期 -->
+        <RadioButton
+            android:id="@+id/accounting_home_type_Expire"
+            style="@style/menuRadioButtonStyle"
+            android:text="@string/account_msg_3" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:background="@color/transparentColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/accouting_home_title_text"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/s18" />
+
+        <ImageButton
+            android:id="@+id/accounting_home_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/viewMarginpadding"
+            android:background="@color/transparentColor"
+            android:src="@mipmap/accounting_home_title_time" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/accounting_home_SwipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accounting_home_menu_selector_layout">
+
+        <FrameLayout
+            android:id="@+id/accounting_home_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/accounting_home_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/viewMarginpadding"
+        android:layout_marginRight="@dimen/viewMarginpadding"
+        android:background="@mipmap/add_icon" />
+
+</RelativeLayout>

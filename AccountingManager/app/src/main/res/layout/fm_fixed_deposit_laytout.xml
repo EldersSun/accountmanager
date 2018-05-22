@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:padding="@dimen/viewMarginpadding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/viewMarginpadding"
+            android:layout_centerVertical="true"
+            android:text="@string/fixed_deposit_input_msg_1" />
+
+       <SeekBar
+           android:id="@+id/fixed_Deposit_period"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_marginLeft="@dimen/d50"
+           android:paddingLeft="@dimen/d15"
+           android:paddingRight="@dimen/d15"
+           android:progress="20"
+           android:max="100"
+           android:maxHeight="4.0dip"
+           android:minHeight="4.0dip"
+           android:thumb="@drawable/set_button_0"
+           android:progressDrawable="@drawable/po_seekbar"
+           />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d5"
+            android:layout_marginLeft="@dimen/d5"
+            android:layout_marginRight="@dimen/d5"
+            android:layout_alignLeft="@id/fixed_Deposit_period"
+            android:layout_below="@id/fixed_Deposit_period"
+            android:src="@drawable/fixed_deposit_img_show"/>
+    </RelativeLayout>
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/fixed_time"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentGravity="right"
+        app:uiContentText="2017-5-11"
+        app:uiContentTitleText="@string/fixed_deposit_input_msg_2" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/fixed_bank"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/fixed_deposit_input_msg_4" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/fixed_rate"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/fixed_deposit_input_msg_5" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/fixed_number"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/fixed_deposit_input_msg_6" />
+
+    <Button
+        android:id="@+id/fixed_submit"
+        style="@style/buttonStyle"
+        android:text="@string/submit" />
+
+</LinearLayout>

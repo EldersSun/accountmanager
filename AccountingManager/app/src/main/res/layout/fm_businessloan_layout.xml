@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Business_name"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentHint="@string/Business_msg_6"
+        app:uiContentTitleText="@string/Business_msg_1" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Business_number"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentTitleText="@string/Business_msg_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal">
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/Business_rate"
+            style="@style/UiContentStyle_input"
+            android:layout_weight="1"
+            app:uiContentGravity="right"
+            app:uiContentTitleText="@string/Business_msg_3" />
+
+        <Button
+            android:id="@+id/Business_selector_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/viewMarginpadding"
+            android:layout_marginRight="@dimen/viewMarginpadding"
+            android:background="@mipmap/icon_home_product_arrow" />
+    </LinearLayout>
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Business_time"
+        style="@style/UiContentStyle_lvShow"
+        android:layout_weight="1"
+        app:uiContentGravity="right"
+        app:uiContentText="@string/Business_msg_7"
+        app:uiContentTitleText="@string/Simple_msg_4" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Business_start_time"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentGravity="right"
+        app:uiContentText="2017-5-2"
+        app:uiContentTitleText="@string/Simple_msg_5" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Business_time_mode"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentGravity="right"
+        app:uiContentText="@string/Simple_msg_7"
+        app:uiContentTitleText="@string/Simple_msg_6" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/Business_repayment_mode"
+        style="@style/UiContentStyle_lvShow"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        app:uiContentGravity="right"
+        app:uiContentText="@string/Business_msg_5"
+        app:uiContentTitleText="@string/Business_msg_4" />
+
+    <Button
+        android:id="@+id/Senior_Submit"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit" />
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/d100"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/addAssetsSelectorType_Manual_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/d10"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginRight="@dimen/d30"
+            android:layout_marginTop="@dimen/d20"
+            android:layout_weight="1"
+            android:background="@drawable/input_assets_selector_type"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/addAssetsSelectorType_Manual_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d30"
+                android:src="@drawable/manual_add_icon" />
+
+            <TextView
+                android:id="@+id/addAssetsSelectorType_Manual_TvShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d10"
+                android:text="@string/addassets_msg_1"
+                android:textColor="@color/titleColor"
+                android:textSize="@dimen/s24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addAssetsSelectorType_Manual_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d10"
+                android:text="@string/addassets_msg_2"
+                android:textColor="@color/titleColor"
+                android:textSize="@dimen/s16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addAssetsSelectorType_Auto_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/d20"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginRight="@dimen/d30"
+            android:layout_marginTop="@dimen/d20"
+            android:layout_weight="1"
+            android:background="@drawable/input_assets_selector_type"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/addAssetsSelectorType_Auto_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d30"
+                android:src="@drawable/auto_add_icon" />
+
+            <TextView
+                android:id="@+id/addAssetsSelectorType_Auto_TvShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d10"
+                android:text="@string/addassets_msg_3"
+                android:textColor="@color/titleColor"
+                android:textSize="@dimen/s24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addAssetsSelectorType_Auto_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d10"
+                android:text="@string/addassets_msg_4"
+                android:textColor="@color/titleColor"
+                android:textSize="@dimen/s16" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

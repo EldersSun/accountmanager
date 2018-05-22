@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="AssetsLiveColorType">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>1</item>
+        <item>1</item>
+    </array>
+
+    <array name="AssetsPropertyColorType">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+    </array>
+
+    <array name="AssetsNationalColorType">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>1</item>
+    </array>
+
+    <array name="AssetsOtherColorType">
+        <item>1</item>
+    </array>
+
+    <!--******************************* 菜单类型 *******************************-->
+
+    <array name="AssetsLiveMenuType">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </array>
+
+    <array name="AssetsPropertyMenuType">
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </array>
+
+    <array name="AssetsNationalMenuType">
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+    </array>
+
+    <array name="AssetsOtherMenuType">
+        <item>22</item>
+    </array>
+
+</resources>

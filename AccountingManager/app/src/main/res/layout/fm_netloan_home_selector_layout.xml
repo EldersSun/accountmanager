@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/netLoanHomeSelectorSearch"
+        style="@style/SearchStyle"
+        android:text="@string/search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorF6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/NetLoanHomeSelectorMsgTvShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/netLoanHomeSelector_msg_1"
+            android:padding="@dimen/d15"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/s12" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/NetLoanHomeSelectorContentShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.accountingmanager.Sys.Widgets.GroupRecyclerView.LatterView
+            android:id="@+id/NetLoanHomeSelectorTypeShow"
+            android:layout_width="@dimen/d30"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_above="@+id/main_radioGroup_layout"
+        android:background="@color/grayColor" />
+
+
+    <RadioGroup
+        android:id="@+id/main_radioGroup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal">
+        <!-- 余额 -->
+        <RadioButton
+            android:id="@+id/main_accounting"
+            style="@style/radioButtonStyle"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableTop="@drawable/accounting_selector_img"
+            android:text="@string/main_menu_text_1" />
+        <!-- 资产透视 -->
+        <RadioButton
+            android:id="@+id/main_assets"
+            style="@style/radioButtonStyle"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/assets_selector_img"
+            android:text="@string/main_menu_text_2" />
+        <!-- 工具 -->
+        <RadioButton
+            android:id="@+id/main_tools"
+            style="@style/radioButtonStyle"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tools_selector_img"
+            android:text="@string/main_menu_text_3" />
+
+        <!-- 咨询 -->
+        <RadioButton
+            android:id="@+id/main_news"
+            style="@style/radioButtonStyle"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/news_selector_img"
+            android:text="@string/main_menu_text_4" />
+    </RadioGroup>
+</RelativeLayout>

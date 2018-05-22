@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/netLoan_regular_name"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentHint="@string/regular_msg_1"
+        app:uiContentTitleText="@string/regular_msg_2" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/netLoan_regular_num"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentHint="@string/regular_msg_3"
+        app:uiContentTitleText="@string/regular_msg_4" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/netLoan_regular_rate"
+        style="@style/UiContentStyle_input"
+        app:uiContentGravity="right"
+        app:uiContentHint="0"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        app:uiContentTitleWidth="@dimen/d70"
+        app:uiContentWidth="@dimen/d120"
+        app:uiContentTitleText="@string/regular_msg_5" />
+
+    <View style="@style/LineViewStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal">
+
+        <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+            android:id="@+id/netLoan_regular_time"
+            style="@style/UiContentStyle_input"
+            android:layout_weight="1"
+            app:uiContentGravity="right"
+            app:uiContentTitleWidth="@dimen/d70"
+            app:uiContentWidth="@dimen/d120"
+            app:uiContentTitleText="@string/regular_msg_6" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/netLoan_regular_year"
+                style="@style/menuRadioButtonStyle"
+                android:checked="true"
+                android:text="@string/year" />
+
+            <RadioButton
+                android:id="@+id/netLoan_regular_month"
+                style="@style/menuRadioButtonStyle"
+                android:text="@string/month" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/netLoan_regular_startTime"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentGravity="right"
+        app:uiContentText="2017-5-5"
+        app:uiContentTitleText="@string/regular_msg_7" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/netLoan_regular_mode"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentGravity="right"
+        app:uiContentText="@string/regular_msg_8"
+        app:uiContentTitleText="@string/regular_msg_9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/viewMarginpadding"
+        android:textSize="@dimen/s12"
+        android:textColor="@color/titleColor"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:text="@string/regular_msg_10" />
+
+    <Button
+        android:id="@+id/netLoan_regular_submit"
+        style="@style/buttonStyle"
+        android:text="@string/submit" />
+
+
+</LinearLayout>

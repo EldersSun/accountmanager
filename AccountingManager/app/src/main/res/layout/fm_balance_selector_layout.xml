@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/viewPaddingTop"
+    android:orientation="vertical">
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/balance_selector_aliPay"
+        style="@style/UiContentStyle_lvShow"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        app:uiContentTitleImgBackgRoundResource="@drawable/icon_alipay"
+        app:uiContentTitleText="@string/aliPay" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/balance_selector_weChat"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentTitleImgBackgRoundResource="@drawable/icon_wechat"
+        app:uiContentTitleText="@string/weChat" />
+
+    <View style="@style/LineViewStyle" />
+
+    <com.accountingmanager.Sys.Widgets.UiContentView.UiContentView
+        android:id="@+id/balance_selector_more"
+        style="@style/UiContentStyle_lvShow"
+        app:uiContentTitleImgBackgRoundResource="@drawable/icon_more"
+        app:uiContentTitleText="@string/moreAccount" />
+</LinearLayout>
